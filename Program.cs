@@ -2,7 +2,6 @@
 int dayUntilExpiration = 11;
 int discountPercentage = 0;
 
-
 if (dayUntilExpiration <= 10)
 {
     Console.WriteLine("Your subscription will expire soon. Renew now!");
@@ -23,5 +22,5 @@ else if(dayUntilExpiration == 0)
 }
 else
 {
-    
+
 }
