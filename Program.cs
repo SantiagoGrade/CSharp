@@ -1,44 +1,27 @@
-﻿Random dice = new Random();
+﻿Random random = new Random ();
+int dayUntilExpiration = 11;
+int discountPercentage = 0;
 
-int roll1 = dice.Next(1, 7);
-int roll2 = dice.Next(1, 7);
-int roll3 = dice.Next(1, 7);
 
-int total = roll1 + roll2 + roll3;
-
- Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
-
-if ((roll1 == roll2)  || (roll2 == roll3) || (roll1 == roll3))
+if (dayUntilExpiration <= 10)
 {
-    if ((roll1 == roll2) && (roll2 == roll3))
-    {
-        Console.WriteLine("You rolled triples! +6 bonust to total!");
-        total += 6;
-    }
-    else
-    {
-        Console.WriteLine("You rolled doubles! +2 bonus to total!");
-        total += 2;
-    }
-    
+    Console.WriteLine("Your subscription will expire soon. Renew now!");
 }
-
-
-
-if ( total >= 16)
+else if(dayUntilExpiration <= 5)
 {
-    Console.WriteLine("You win a new car!");
+    Console.WriteLine("Your subscription expires in _ days.\n Renew now and save 10%!");
+    discountPercentage = 10;
 }
-else if ( total >= 10 )
+else if(dayUntilExpiration == 1)
 {
-    Console.WriteLine("You win a new laptop!");
+    Console.WriteLine("Your subscription expires within a day! \n Renew now and save 20%");
+    discountPercentage = 20;
 }
-else if ( total == 7)
+else if(dayUntilExpiration == 0)
 {
-    Console.WriteLine("You win a trip for two!");
+    Console.WriteLine("Your subscription has expired.");
 }
 else
 {
-    Console.WriteLine("You win a kitten!");
+    
 }
-
