@@ -1,24 +1,19 @@
-﻿Random random = new Random ();
-int dayUntilExpiration = random.Next(12);
-int discountPercentage = 0;
+﻿/*
+string[] faraudulentOrderIDs = new string[3];
 
-if (dayUntilExpiration <= 10)
-{
-    Console.WriteLine("Your subscription will expire soon. Renew now!");
-}
-else if(dayUntilExpiration <= 5)
-{
-    Console.WriteLine($"Your subscription expires in {dayUntilExpiration} days.\n Renew now and save 10%!");
-    discountPercentage = 10;
-}
-else if(dayUntilExpiration == 1)
-{
-    
-    discountPercentage = 20;
-    Console.WriteLine($"Your subscription expires {dayUntilExpiration} within a day! \n Renew now and save {discountPercentage}%");
-}
-else if(dayUntilExpiration == 0)
-{
-    Console.WriteLine("Your subscription has expired.");
-}
+faraudulentOrderIDs[0] = "A123";
+faraudulentOrderIDs[1] = "B456";
+faraudulentOrderIDs[2] = "C789";
+*/
 
+string[] faraudulentOrderIDs = {"A123", "B456", "C789"};
+
+Console.WriteLine($"First: {faraudulentOrderIDs[0]}");
+Console.WriteLine($"Second: {faraudulentOrderIDs[1]}");
+Console.WriteLine($"Third: {faraudulentOrderIDs[2]}");
+
+faraudulentOrderIDs[0] = "F000";
+
+Console.WriteLine($"Reassign First: {faraudulentOrderIDs[0]}");
+
+Console.WriteLine($"There are {faraudulentOrderIDs.Length} fraudulent orders to procces.");
