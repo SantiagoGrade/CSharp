@@ -1,5 +1,5 @@
 ﻿Random random = new Random ();
-int dayUntilExpiration = 10;
+int dayUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
 if (dayUntilExpiration <= 10)
