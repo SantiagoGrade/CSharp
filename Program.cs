@@ -26,4 +26,4 @@ foreach (int number in numbers)
     }
 }
 
-Console.WriteLine($"The hightes number in the list is: {hightes}");
+Console.WriteLine($"The hightest number in the list is: {hightes}");
