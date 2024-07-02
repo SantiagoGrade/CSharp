@@ -22,6 +22,8 @@ foreach (int number in numbers)
 {
     if (number > hightes)
     {
-
+        hightes = number;
     }
 }
+
+Console.WriteLine($"The hightes number in the list is: {hightes}");
