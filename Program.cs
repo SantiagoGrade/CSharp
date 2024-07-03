@@ -16,14 +16,3 @@ foreach (int items in inventory)
 
 Console.WriteLine($"We have {sum} items in inventory.");
 
-int[] numbers = {3, 7, 2, 9, 2, 7, 3, 6, 2, 1};
-int hightes = 0;
-foreach (int number in numbers)
-{
-    if (number > hightes)
-    {
-        hightes = number;
-    }
-}
-
-Console.WriteLine($"The hightest number in the list is: {hightes}");
