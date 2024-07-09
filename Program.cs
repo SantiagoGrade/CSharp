@@ -1,9 +1,4 @@
-﻿/*
-  The following code creates five random OrderIDs
-  to test the fraud detection process.  OrderIDs 
-  consist of a letter from A to E, and a three
-  digit number. Ex. A123.
-*/
+﻿
 Random random = new Random();
 string[] orderIDs = new string[5];
 
