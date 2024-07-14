@@ -1,6 +1,6 @@
 ﻿
 
-string[] names = new string[5];
+string[] names = new string[4];
 names = ["angel", "Santiago", "Afrito", "salbutamol"];
 
 foreach(string name in names){
